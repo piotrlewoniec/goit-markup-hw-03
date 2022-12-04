@@ -11,54 +11,70 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="container horizontal section-header">
       <a class="logo-text" href="index.html"
         ><span class="logo-text-web">Web</span><span class="logo-text-header">Studio</span></a
       >
       <nav>
-        <ul class="navigation-list-style">
-          <li><a class="navigation" href="agencja.html">Agencja</a></li>
-          <li><a class="navigation" href="portfolio.html">Portfolio</a></li>
+        <ul class="navigation-list-style horizontal">
+          <li class="navigation-positon-left">
+            <a class="navigation" href="agencja.html">Agencja</a>
+          </li>
+          <li class="navigation-position-between">
+            <a class="navigation" href="portfolio.html">Portfolio</a>
+          </li>
           <li><a class="navigation" href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
-      <a class="header-links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="header-links navigation-links-position" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
       <a class="header-links" href="tel:+48111111111">+48 111 111 111</a>
     </header>
     <main>
       <!--Service order -->
-      <section class="order-section">
-        <h1 class="header-one">Efektywe rozwiązania dla Waszego biznesu</h1>
-        <button class="buttons-settings-dark-bground" type="button">Zamów usługę</button>
-      </section>
+      <div class="order-section">
+        <section class="order-section order-padding container">
+          <h1 class="header-one order-text-size">Efektywe rozwiązania dla Waszego biznesu</h1>
+
+          <button class="buttons-settings-dark-bground" type="button">Zamów usługę</button>
+        </section>
+      </div>
       <!--Our advantages -->
-      <section>
-        <ul class="advantages-list-style">
-          <li>
+      <section class="section container">
+        <ul class="advantages-list-style net-elements">
+          <li class="net-item">
             <h3 class="header-three">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="net-item">
             <h3 class="header-three">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="net-item">
             <h3 class="header-three">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="net-item">
             <h3 class="header-three">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -68,9 +84,9 @@
         </ul>
       </section>
       <!--Scope of offer -->
-      <section>
+      <section class="section">
         <h2 class="header-two">Czym się zajmujemy</h2>
-        <ul class="offer-list-style">
+        <ul class="offer-list-style horizontal team-position">
           <li>
             <img
               src="images/offer/keyboardtyping.jpg"
@@ -98,9 +114,9 @@
         </ul>
       </section>
       <!--Our team -->
-      <section class="team-section">
+      <section class="team-section section">
         <h2 class="header-two">Nasz zespół</h2>
-        <ul class="team-list-style">
+        <ul class="team-list-style horizontal team-position">
           <li>
             <img
               src="images/team/johndoe001.jpg"
@@ -108,7 +124,7 @@
               width="270"
               height="260"
             />
-            <h3 class="header-three-team">John Doe</h3>
+            <h3 class="header-three-team team-name-position">John Doe</h3>
             <p>Product Designer</p>
           </li>
           <li>
@@ -118,7 +134,7 @@
               width="270"
               height="260"
             />
-            <h3 class="header-three-team">John Doe</h3>
+            <h3 class="header-three-team team-name-position">John Doe</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
@@ -128,7 +144,7 @@
               width="270"
               height="260"
             />
-            <h3 class="header-three-team">John Doe</h3>
+            <h3 class="header-three-team team-name-position">John Doe</h3>
             <p>Marketing</p>
           </li>
           <li>
@@ -138,26 +154,30 @@
               width="270"
               height="260"
             />
-            <h3 class="header-three-team">John Doe</h3>
+            <h3 class="header-three-team team-name-position">John Doe</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <address class="address-settings">
-        <a class="logo-text" href="index.html"
-          ><span class="logo-text-web">Web</span><span class="logo-text-footer">Studio</span></a
-        >
-        <a
-          class="footer-links footer-address"
-          href="https://goo.gl/maps/pHMx9WPnjpLHhn8T6"
-          target="_blank"
-          >m. Warszawa, Aleje Jerozolimskie 21</a
-        >
-        <a class="footer-links" href="mailto:info@example.com">info@example.com</a>
-        <a class="footer-links" href="tel:+48111111111">+48 111 111 111</a>
-      </address>
+      <div class="footer-background-colored">
+        <address class="address-settings container vertical section-footer">
+          <a class="logo-text" href="index.html"
+            ><span class="logo-text-web">Web</span><span class="logo-text-footer">Studio</span></a
+          >
+          <a
+            class="footer-links footer-address footer-address-position"
+            href="https://goo.gl/maps/pHMx9WPnjpLHhn8T6"
+            target="_blank"
+            >m. Warszawa, Aleje Jerozolimskie 21</a
+          >
+          <a class="footer-links footer-address-position-between" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+          <a class="footer-links" href="tel:+48111111111">+48 111 111 111</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
