@@ -355,6 +355,14 @@ body {
   margin-right: 46px;
 }
 
+.navigation-logo-nav-distance {
+  column-gap: 93px;
+}
+
+.navigation-links-distance {
+  column-gap: 50px;
+}
+
 .footer-address-position {
   margin-top: 20px;
 }
