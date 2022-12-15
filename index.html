@@ -21,26 +21,30 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="container horizontal section-header">
-      <a class="logo-text" href="index.html"
-        ><span class="logo-text-web">Web</span><span class="logo-text-header">Studio</span></a
-      >
-      <nav>
-        <ul class="navigation-list-style horizontal">
-          <li class="navigation-positon-left">
-            <a class="navigation" href="agencja.html">Agencja</a>
-          </li>
-          <li class="navigation-position-between">
-            <a class="navigation" href="portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="navigation" href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a class="header-links navigation-links-position" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="header-links" href="tel:+48111111111">+48 111 111 111</a>
-    </header>
+    <div class="section-header">
+      <header class="container horizontal navigation-elements-positions">
+        <div class="horizontal navigation-logo-nav-distance">
+          <a class="logo-text" href="index.html"
+            ><span class="logo-text-web">Web</span><span class="logo-text-header">Studio</span></a
+          >
+          <nav>
+            <ul class="navigation-list-style horizontal">
+              <li>
+                <a class="navigation" href="agencja.html">Agencja</a>
+              </li>
+              <li class="navigation-position-between">
+                <a class="navigation" href="portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="navigation" href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="horizontal navigation-links-distance">
+          <a class="header-links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="header-links" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
+      </header>
+    </div>
     <main>
       <!--Service order -->
       <div class="order-section">
@@ -51,7 +55,7 @@
         </section>
       </div>
       <!--Our advantages -->
-      <section class="section container">
+      <section class="section-advantages container">
         <ul class="advantages-list-style net-elements">
           <li class="net-item">
             <h3 class="header-three">LOREM IPSUM</h3>
@@ -84,11 +88,12 @@
         </ul>
       </section>
       <!--Scope of offer -->
-      <section class="section">
+      <section class="section container">
         <h2 class="header-two">Czym się zajmujemy</h2>
         <ul class="offer-list-style horizontal team-position">
           <li>
             <img
+              class="img-settings"
               src="images/offer/keyboardtyping.jpg"
               alt="Ręce nad klawiaturą, nad którą jest tablet w tle monitor"
               width="370"
@@ -97,6 +102,7 @@
           </li>
           <li>
             <img
+              class="img-settings"
               src="images/offer/cellphone.jpg"
               alt="Komórka w lewej dłoni, prawą dłoń obsługuje touchpad laptopa, w tle duży monitor"
               width="370"
@@ -105,6 +111,7 @@
           </li>
           <li>
             <img
+              class="img-settings"
               src="images/offer/tablet.jpg"
               alt="W lewej dłoni tablet, w prawej rysik, w tle monitor, myszka, klawiatura"
               width="370"
@@ -114,51 +121,65 @@
         </ul>
       </section>
       <!--Our team -->
-      <section class="team-section section">
-        <h2 class="header-two">Nasz zespół</h2>
-        <ul class="team-list-style horizontal team-position">
-          <li>
-            <img
-              src="images/team/johndoe001.jpg"
-              alt="Zdjęcie Johna Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="header-three-team team-name-position">John Doe</h3>
-            <p>Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="images/team/johndoe002.jpg"
-              alt="Zdjęcie Johna Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="header-three-team team-name-position">John Doe</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="images/team/johndoe003.jpg"
-              alt="Zdjęcie Johna Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="header-three-team team-name-position">John Doe</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/team/johndoe004.jpg"
-              alt="Zdjęcie Johna Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="header-three-team team-name-position">John Doe</h3>
-            <p>UI Designer</p>
-          </li>
-        </ul>
-      </section>
+      <div class="team-section">
+        <section class="team-section section container">
+          <h2 class="header-two">Nasz zespół</h2>
+          <ul class="team-list-style horizontal team-position">
+            <li>
+              <img
+                class="img-settings"
+                src="images/team/johndoe001.jpg"
+                alt="Zdjęcie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <div class="team-name-position">
+                <h3 class="header-three-team">John Doe</h3>
+                <p class="team-name-distance">Product Designer</p>
+              </div>
+            </li>
+            <li>
+              <img
+                class="img-settings"
+                src="images/team/johndoe002.jpg"
+                alt="Zdjęcie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <div class="team-name-position">
+                <h3 class="header-three-team">John Doe</h3>
+                <p class="team-name-distance">Frontend Developer</p>
+              </div>
+            </li>
+            <li>
+              <img
+                class="img-settings"
+                src="images/team/johndoe003.jpg"
+                alt="Zdjęcie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <div class="team-name-position">
+                <h3 class="header-three-team">John Doe</h3>
+                <p class="team-name-distance">Marketing</p>
+              </div>
+            </li>
+            <li>
+              <img
+                class="img-settings"
+                src="images/team/johndoe004.jpg"
+                alt="Zdjęcie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <div class="team-name-position">
+                <h3 class="header-three-team">John Doe</h3>
+                <p class="team-name-distance">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer-background-colored">
